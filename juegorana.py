@@ -4,7 +4,7 @@ import random
 import re
 import sys
 
-if __name__ == "__main__": 
+if __name__ == "__main__":
     first_multiple_input= input().rstrip().split()
 
 
@@ -32,4 +32,36 @@ if __name__ == "__main__":
 
         #escribir nuestro código
 
-        
+    def restricciones():
+        if m or n >= 20:
+            pass
+        else:
+            exit()
+
+        if i1 or i2 >= n:
+            pass
+        else:
+            exit()
+
+        if i1 or i2 >= m:
+            pass
+        else:
+            exit()
+
+        if n*m > 2*k:
+            pass
+        else:
+            exit()
+
+        if (i1,ji) != (i2,j2):
+            pass
+        else:
+            exit()
+
+        # A aparace exactamente una vez
+
+        # Cada celda contiene como maximo una entrada a un tunel
+
+        # Si una celda contiene una entrada a un túnel, entonces no contiene un obstáculo 
+
+
