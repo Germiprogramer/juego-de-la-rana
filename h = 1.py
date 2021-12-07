@@ -1,8 +1,10 @@
-h = 1
+import numpy as np
 
-if h == 1:
-    exit()
-else:
-    print("a")
+BL = (255, 255, 255)
+NG = (0, 0, 0)
 
-print("aaa")
+tablero = [
+    [BL, "NG", "BL"]
+]
+print(tablero)
+

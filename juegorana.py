@@ -32,6 +32,18 @@ if __name__ == "__main__":
 
         #escribir nuestro código
 
+lineasmapa = m
+columnasmapa = n
+
+
+
+
+
+
+
+
+
+
     def restricciones():
         if m or n >= 20:
             pass
@@ -53,7 +65,7 @@ if __name__ == "__main__":
         else:
             exit()
 
-        if (i1,ji) != (i2,j2):
+        if (i1,j1) != (i2,j2):
             pass
         else:
             exit()
