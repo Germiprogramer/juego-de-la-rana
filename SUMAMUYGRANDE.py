@@ -1,18 +1,30 @@
 from random import randint
-import numpy as np
-np.array([1,2],[3,4])
 
-print(np.array([1,2],[3,4]))
+numero_filas = int(input("elige numero de filas = "))
+numero_columnas = int(input("elige numero de filas = "))
 
-matriz = [
+matriz = []
+for i in range(numero_filas):
+    matriz.append([])
+    for j in range(numero_columnas):
+        matriz[i].append(int(randint(0,100)))
+
+#elementosmatriz = int(numero_filas*numero_columnas)
+
+#for elementosmatriz in range(elementosmatriz):
+    #sum(matriz[0:elementosmatriz])
+
+#sumamatriz = sum(matriz)
+#print(f"Sum of list -> {sumamatriz}")
+
+
+print(matriz)
+
+matrizz = [
     [1, 2],
     [3, 4],
 ]
 
-
-
-def suma(matriz):
-    sumamatriz = (matriz[0])[0] + (matriz[1])[0] + (matriz[0])[0] + (matriz[0])[1]
-    print(sumamatriz)
-    
-suma(matriz)
+def suma(matrizz):
+    sumamatriz = sum(matrizz)
+suma(matrizz)
