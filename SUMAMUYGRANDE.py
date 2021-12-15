@@ -9,6 +9,17 @@ for i in range(numero_filas):
     for j in range(numero_columnas):
         matriz[i].append(int(randint(0,100)))
 
+suma = 0
+
+for i in range(numero_filas):
+    for j in range(numero_columnas):
+        suma += matriz[i][j]
+
+print(matriz)
+
+print(suma)
+
+
 #elementosmatriz = int(numero_filas*numero_columnas)
 
 #for elementosmatriz in range(elementosmatriz):
@@ -18,13 +29,12 @@ for i in range(numero_filas):
 #print(f"Sum of list -> {sumamatriz}")
 
 
-print(matriz)
 
-matrizz = [
-    [1, 2],
-    [3, 4],
-]
+#matrizz = [
+#    [1, 2],
+#    [3, 4],
+#]
 
-def suma(matrizz):
-    sumamatriz = sum(matrizz)
-suma(matrizz)
+#def suma(matrizz):
+#    sumamatriz = sum(matrizz)
+#suma(matrizz)
