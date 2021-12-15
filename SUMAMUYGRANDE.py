@@ -14,6 +14,7 @@ suma = 0
 for i in range(numero_filas):
     for j in range(numero_columnas):
         suma += matriz[i][j]
+        suma = int(suma)
 
 print(matriz)
 
