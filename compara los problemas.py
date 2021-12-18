@@ -3,19 +3,24 @@ import os
 import random
 import re
 import sys
-#
-# Complete the 'compareTriplets' function below.
-#
-# The function is expected to return an INTEGER_ARRAY.
-# The function accepts following parameters:
-# 1. INTEGER_ARRAY a
-# 2. INTEGER_ARRAY b
-#
-def compareTriplets(a, b):
+
+notas1 = [73, 67, 38, 33]
 
 
-if __name__ == '__main__':
+for i in range(len(notas1)):
+    if notas1[i]> 40:
+        print("El alumno {} ha aprobado".format(i+1))
+    else:
+        print("El alumno {} ha suspendido".format(i+1))
 
-fptr = open(os.environ['OUTPUT_PATH'], 'w')
-a = list(map(int, input().rstrip().split()))
-b = list(map(int, input().rstrip().split()))
+for i in range(len(notas1)):
+    if notas1[i]> 40:
+        cociente= int(notas1[1]/5 +1)
+        multiplo = cociente*5
+        if (multiplo-notas1[i]) <3:
+            print("La nota del alumno {} se aproxima, la nota es {}".format(i+1,multiplo))
+    elif notas1[i]< 40:
+        print("El alumno {} se queda con su nota".format(i+1,notas1[i]))
+    else:
+        print("El alumno {} se queda con su nota".format(i+1,notas1[i]))
+    
